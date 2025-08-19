@@ -7,7 +7,7 @@ export default function App() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<StatusBar style="light" />
-			<WebView source={{ uri: "https://reactnative.dev" }} style={{ flex: 1 }} />
+			<WebView source={{ uri: "https://college-project-nu-silk.vercel.app" }} className="flex-1 mt-10" />
 		</SafeAreaView>
 	);
 }
