@@ -34,6 +34,13 @@ export default function TabLayout() {
 				}}
 			/>
 			<Tabs.Screen
+				name="googledata"
+				options={{
+					title: "Students Data",
+					tabBarIcon: ({ color }) => <Feather name="users" size={24} color="black" />
+				}}
+			/>
+			<Tabs.Screen
 				name="analysis"
 				options={{
 					title: "Analysis",

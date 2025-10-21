@@ -1,12 +1,28 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Text, View } from "react-native";
+import { Platform, StatusBar as RNStatusBar, StyleSheet } from "react-native";
+
+import { SafeAreaView } from "react-native-safe-area-context";
+import WebView from "react-native-webview";
+const resultAnalysis = process.env.EXPO_PUBLIC_DASHBOARD_URL + "/dashboard/result-analysis";
 
 const analysis = () => {
 	return (
-		<View className="flex flex-1 justify-center items-center">
-			<Text>analysis</Text>
-		</View>
+		<SafeAreaView style={[styles.container, { paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0 }]} edges={["left", "right", "bottom"]}>
+			<StatusBar style="dark" />
+			<WebView source={{ uri: resultAnalysis || "https://college-project-nu-silk.vercel.app/dashboard/result-analysis" }} style={styles.webview} />
+		</SafeAreaView>
 	);
 };
 
 export default analysis;
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: "#fff" // optional for better contrast
+	},
+	webview: {
+		flex: 1
+	}
+});
