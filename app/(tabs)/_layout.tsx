@@ -41,7 +41,7 @@ export default function TabLayout() {
 				}}
 			/>
 			<Tabs.Screen
-				name="exportexcel"
+				name="excelexport"
 				options={{
 					title: "Export",
 					tabBarIcon: ({ color }) => <Feather name="file" size={24} color="black" />
