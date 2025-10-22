@@ -9,7 +9,7 @@ export default function App() {
 	return (
 		<SafeAreaView style={[styles.container, { paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0 }]} edges={["left", "right", "bottom"]}>
 			<StatusBar style="dark" />
-			<WebView source={{ uri: hoemurl || "https://college-project-nu-silk.vercel.app" }} style={styles.webview} />
+			<WebView source={{ uri: "https://college-project-nu-silk.vercel.app" }} style={styles.webview} />
 		</SafeAreaView>
 	);
 }
