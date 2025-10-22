@@ -3,7 +3,6 @@ import React from "react";
 import { Platform, StatusBar as RNStatusBar, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
-const hoemurl = process.env.EXPO_PUBLIC_DASHBOARD_URL;
 
 export default function App() {
 	return (
