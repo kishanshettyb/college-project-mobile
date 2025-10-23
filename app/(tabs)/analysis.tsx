@@ -8,7 +8,7 @@ const analysis = () => {
 	return (
 		<SafeAreaView style={[styles.container, { paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0 }]} edges={["left", "right", "bottom"]}>
 			<StatusBar style="dark" />
-			<WebView source={{ uri: "https://college-project-nu-silk.vercel.app/dashboard/result-analysis" }} style={styles.webview} />
+			<WebView source={{ uri: "https://college-project-nu-silk.vercel.app/dashboard/result-analysis?webview_token=123" }} style={styles.webview} />
 		</SafeAreaView>
 	);
 };
