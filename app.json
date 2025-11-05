@@ -1,49 +1,49 @@
 {
-  "expo": {
-    "name": "GEC-Chamarajanagara",
-    "slug": "GEC-Chamarajanagara",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "gecchamrajnagara",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kishanshetty.collegeresultanalysis"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.kishanshetty.collegeresultanalysis"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "eas": {
-        "projectId": "55bec715-ca06-4e65-97fe-895a63571ca2"
-      }
-    }
-  }
+	"expo": {
+		"name": "GEC-Chamarajanagara",
+		"slug": "GEC-Chamarajanagara",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"scheme": "gecchamrajnagara",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.kishanshetty.collegeresultanalysis"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/images/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"edgeToEdgeEnabled": true,
+			"package": "com.kishanshetty.collegeresultanalysis"
+		},
+		"web": {
+			"bundler": "metro",
+			"output": "static",
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/images/splash-icon.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#ffffff"
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"eas": {
+				"projectId": "55bec715-ca06-4e65-97fe-895a63571ca2"
+			}
+		}
+	}
 }
