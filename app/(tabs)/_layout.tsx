@@ -30,28 +30,28 @@ export default function TabLayout() {
 				name="index"
 				options={{
 					title: "Home",
-					tabBarIcon: ({ color }) => <Feather name="home" size={24} color="black" />
+					tabBarIcon: ({ color }) => <Feather name="home" size={24} color={color} />
 				}}
 			/>
 			<Tabs.Screen
 				name="googledata"
 				options={{
 					title: "Students Data",
-					tabBarIcon: ({ color }) => <Feather name="users" size={24} color="black" />
+					tabBarIcon: ({ color }) => <Feather name="users" size={24} color={color} />
 				}}
 			/>
 			<Tabs.Screen
 				name="excelexport"
 				options={{
 					title: "Export",
-					tabBarIcon: ({ color }) => <Feather name="file" size={24} color="black" />
+					tabBarIcon: ({ color }) => <Feather name="file" size={24} color={color} />
 				}}
 			/>
 			<Tabs.Screen
 				name="analysis"
 				options={{
 					title: "Analysis",
-					tabBarIcon: ({ color }) => <Feather name="bar-chart" size={24} color="black" />
+					tabBarIcon: ({ color }) => <Feather name="bar-chart" size={24} color={color} />
 				}}
 			/>
 		</Tabs>
