@@ -26,7 +26,21 @@ export default function App() {
 	return (
 		<SafeAreaView style={[styles.container, { paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0 }]}>
 			<StatusBar style="dark" />
-			<WebView source={{ uri: "https://college-project-nu-silk.vercel.app" }} style={styles.webview} />
+			<WebView
+				source={{
+					uri: "http://192.168.60.90:3000",
+					headers: {
+						"x-webview-auth": "true",
+						authorization: "Bearer YOUR_TOKEN_HERE",
+						"x-username": "4GE12345"
+					}
+				}}
+				sharedCookiesEnabled
+				thirdPartyCookiesEnabled
+				javaScriptEnabled
+				domStorageEnabled
+				style={styles.webview}
+			/>
 		</SafeAreaView>
 	);
 }
